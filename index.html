@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+
+
+    <!--QWL CAROUSEL CSS-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>D-503 Game Portal</title>
+</head>
+
+<body>
+
+    <!--  HEADER -->
+    <header class="main-header bg-dark">
+
+        <!--   TOP HEADER -->
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>D-503</h1>
+                </div>
+
+                <ul class="top-social-menu">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#"><i class="fab fa-amazon"></i></a></li>
+                </ul>
+
+                <div class="login-area">
+                    <a href="#" class="btn btn-primary"><span>Login</span><i class="fas fa-sign-in-alt"></i></a>
+                    <a href="#" class="btn ml-2"><span>Sign Up</span><i class="fas fa-user-plus"></i></a>
+                </div>
+
+                <input type="checkbox" id="chek">
+                <label for="chek" class="open-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </div>
+
+        <!--   NAV HEADER -->
+        <div class="container">
+            <div class="nav-header">
+                <nav class="navbar">
+
+                    <ul class="navbar-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a>
+                            <i class="fas fa-chevron-down"></i>
+                            <ul class="dropdown">
+                                <li><a href="#">Game I</a></li>
+                                <li><a href="#">Game II</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Blog</a>
+                            <i class="fas fa-chevron-down"></i>
+                            <ul class="dropdown">
+                                <li><a href="#">Blog I</a></li>
+                                <li><a href="#">Blog II</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <div class="search-area">
+                        <form>
+                            <input type="search" placeholder="Search">
+                            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <label for="chek" class="close-menu">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main role="main">
+        <!--Main Slider-->
+        <div class="main-slider owl-carousel owl-theme">
+            <!--Single Slide-->
+            <div class="single-slide" data-dot="<span>01.</span>">
+
+                <picture>
+                    <source srcset="images/slide_4_small.jpg" media="(max-width: 768px)">
+                        <!-- 768 DEn kucukse usttekini kullan degilse alttakini kullan -->
+                    <img srcset="images/slide_4.jpg">
+                </picture>
+
+
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>GAME PORTAL</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem voluptates
+                                quasi aspernatur nesciunt autem odio, aliquam minima sunt, nostrum cupiditate recusandae
+                                nemo nulla soluta, saepe incidunt necessitatibus eveniet repellendus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Single Slide-->
+            <div class="single-slide" data-dot="<span>02.</span>">
+                <img src="images/slide_2.jpg">
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>GAME PORTAL</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem voluptates
+                                quasi aspernatur nesciunt autem odio, aliquam minima sunt, nostrum cupiditate recusandae
+                                nemo nulla soluta, saepe incidunt necessitatibus eveniet repellendus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Single Slide-->
+            <div class="single-slide" data-dot="<span>03.</span>">
+                <img src="images/slide_1.jpg">
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>GAME PORTAL</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptatem voluptates
+                                quasi aspernatur nesciunt autem odio, aliquam minima sunt, nostrum cupiditate recusandae
+                                nemo nulla soluta, saepe incidunt necessitatibus eveniet repellendus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- LATEST NEWS  -->
+
+        <div class="latest-news">
+            <div class="latest-news-title">
+                <h4>Latest News</h4>
+            </div>
+            <div class="latest-news-content">
+                <marquee>
+                    <div class="news-ticker">
+                        <p> <span class="badge">NEWS</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p> <span class="badge badge-tech">TECH</span>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.</p>
+                        <p> <span class="badge badge-game">GAME</span>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit.</p>
+                    </div>
+                </marquee>
+            </div>
+        </div>
+
+        <!-- RECENT GAMES  -->
+
+        <section class="recent-games">
+
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <h2 class="text-primary">RECENT GAMES</h2>
+                </div>
+
+                <div class="recent-games-content">
+
+                    <!-- SINGLE GAME FEATURED  -->
+                    <div class="recent-game recent-game-1 recent-game-featured">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/featured-game.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title"><a href="#">CALL OF DUTY</a></h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga sit nobis, saepe, magni
+                                laudantium placeat aut nesciunt odit earum maxime libero. Laboriosam vitae, quaerat
+                                magnam odio consectetur non sapiente et?</p>
+                        </div>
+
+                    </div>
+
+                    <!-- SINGLE GAME-->
+                    <div class="recent-game recent-game-2">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/game_2.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title">CALL OF DUTY</h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SINGLE GAME-->
+                    <div class="recent-game recent-game-3">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/game_3.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title">CALL OF DUTY</h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SINGLE GAME-->
+                    <div class="recent-game recent-game-4">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/game_4.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title">CALL OF DUTY</h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SINGLE GAME-->
+                    <div class="recent-game recent-game-5">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/game_5.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title">CALL OF DUTY</h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SINGLE GAME-->
+                    <div class="recent-game recent-game-6">
+
+                        <div class="recent-game-thumbnail">
+                            <div class="rating">8.7</div>
+                            <img src="images/game_6.jpg">
+                        </div>
+
+                        <div class="recent-game-content">
+                            <h3 class="game-title">CALL OF DUTY</h3>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">July 12, 2020</a>
+                                <a href="#" class="game-comment">3 Comments</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LATEST REVIEW -->
+        <section class="last-reviewed">
+            <div class="last-reviewed-detail">
+                <div class="review">
+                    <h3 class="review-title">DESPERADOS 3</h3>
+                    <p class="review-tags">Adventure | Action</p>
+                    <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span><a
+                                href="#">READ MORE</a></span></p>
+                    <div class="review-user">
+                        <img src="images/user.jpg" alt="User">
+                        <div class="review-user-detail">
+                            <p class="review-user-name">John Doe</p>
+                            <p class="review-user-date">July 12, 2020</p>
+                        </div>
+                        <div class="review-user-platform">
+                            <span class="fab fa-android fa-3x"></span>
+                            <span class="fab fa-apple fa-3x"></span>
+                            <span class="fab fa-windows fa-3x"></span>
+                        </div>
+                        <div class="review-user-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-reviewed-image">
+
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+
+        <section class="gallery">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <h2 class="text-primary">LOREM IPSUM</h2>
+                </div>
+
+                <div class="masonary">
+                    <div class="masonary-item masonary-item-1">
+                        <img src="images/game_2.jpg" alt="Game 2" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-2">
+                        <img src="images/game_3.jpg" alt="Game 3" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-3">
+                        <img src="images/game_4.jpg" alt="Game 3" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-4">
+                        <img src="images/game_5.jpg" alt="Game 4" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-5">
+                        <img src="images/game_6.jpg" alt="Game 5" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-6">
+                        <img src="images/game_2.jpg" alt="Game 6" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-7">
+                        <img src="images/game_3.jpg" alt="Game 7" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    <div class="masonary-item masonary-item-8">
+                        <img src="images/game_4.jpg" alt="Game 8" class="masonary-image">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOWCASE SECTION -->
+
+        <section class="showcase">
+            <div class="showcase-content">
+
+                <div class="showcase-item">
+                    <div class="item-image">
+                        <img src="images/game_6.jpg" alt="Game 5">
+                    </div>
+                    <div class="item-content">
+                        <h3>Age Of Empires II</h3>
+                        <a href="#"><i class="far fa-play-circle"></i></a>
+                        <p><em>Lorem ipsum dolor sit</em></p>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="item-image">
+                        <img src="images/game_3.jpg" alt="Game 5">
+                    </div>
+                    <div class="item-content">
+                        <h3>Age Of Empires II</h3>
+                        <a href="#"><i class="far fa-play-circle"></i></a>
+                        <p><em>Lorem ipsum dolor sit</em></p>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="item-image">
+                        <img src="images/game_4.jpg" alt="Game 5">
+                    </div>
+                    <div class="item-content">
+                        <h3>Age Of Empires II</h3>
+                        <a href="#"><i class="far fa-play-circle"></i></a>
+                        <p><em>Lorem ipsum dolor sit</em></p>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="item-image">
+                        <img src="images/game_5.jpg" alt="Game 5">
+                    </div>
+                    <div class="item-content">
+                        <h3>Age Of Empires II</h3>
+                        <a href="#"><i class="far fa-play-circle"></i></a>
+                        <p><em>Lorem ipsum dolor sit</em></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TEAM SECTION -->
+
+        <section class="team">
+
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="text-primary">THE TEAM</h2>
+                </div>
+
+                <div class="team-members">
+
+                    <div class="team-member">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/team1.jpg" alt="Team Member 1">
+                                    <h4>John Doe</h4>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <p>FOUNDER</p>
+                                        <a href="#"><i class="fab fa-twitter-square fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-linkedin fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-facebook-square fa-3x m-1"></i> </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/team2.jpg" alt="Team Member 1">
+                                    <h4>Janis Joplin</h4>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <p>DESIGNER</p>
+                                        <a href="#"><i class="fab fa-twitter-square fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-linkedin fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-facebook-square fa-3x m-1"></i> </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/team3.jpg" alt="Team Member 1">
+                                    <h4>John Doe</h4>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <p>DEVELOPER</p>
+                                        <a href="#"><i class="fab fa-twitter-square fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-linkedin fa-3x m-1"></i> </a>
+                                        <a href="#"><i class="fab fa-facebook-square fa-3x m-1"></i> </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section class="contact">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <h2 class="text-primary">CONTACT</h2>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-content-detail">
+                        <h3>GET IN TOUCH</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-3x"></i>
+                                <p>Downtown Suite, Avenue 123/C:5 Akçay - Balıkesir</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope fa-3x"></i>
+                                <p>info (at) d503 (dot) com</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone fa-3x"></i>
+                                <p>555-333-666-444</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-content-form">
+                        <form>
+                            <input type="text" placeholder="* Your Name" required>
+                            <input type="email" placeholder="* Your Email" required>
+                            <textarea placeholder="* Your Message" rows="5" required></textarea>
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>2020 NO &copy; ARİN YAZILIM</p>
+            </div>
+
+            <div class="down-social-link">
+                <a href="#" class="fc">F</a>
+                <a href="#" class="tw">T</a>
+                <a href="#" class="yt">Y</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

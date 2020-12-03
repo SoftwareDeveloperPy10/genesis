@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+/** UTİLİTİES tek bir islevleri vardır **/
+.bg-dark {
+  background-color: #14151A;
+}
+.bg-light {
+  background-color: #EFEFEF;
+}
+
+/** GENERAL SETTİNGS **/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #9F9F9F;
+  background-color: #EFEFEF;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Changa", sans-serif;
+  color: #EFEFEF;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/** TOP HEADER **/
+.top-header {
+  border-bottom: 1px solid #E51515;
+}
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header .container .logo h1 {
+  font-size: 5rem;
+  font-family: "Changa", sans-serif;
+  color: #E51515;
+}
+.top-header .container .top-social-menu {
+  display: flex;
+}
+.top-header .container .top-social-menu li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.top-header .container .top-social-menu li a {
+  font-size: 2rem;
+}
+.top-header .container .top-social-menu li:hover a {
+  transition: 100ms all;
+  color: #E51515;
+}
+.top-header .container .login-area span {
+  display: none;
+}

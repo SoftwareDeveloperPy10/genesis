@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+/** UTİLİTİES tek bir islevleri vardır **/
+.bg-dark {
+  background-color: #14151A;
+}
+.bg-light {
+  background-color: #EFEFEF;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}

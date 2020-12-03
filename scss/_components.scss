@@ -1,0 +1,227 @@
+/** BUTTONS **/
+
+.btn {
+    background-color: $light-color;
+    color: $primary-color;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+
+    @include media(medium) {
+        padding: 0.5rem 1rem;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color: $light-color;
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        color: $light-color;
+
+        &:hover {
+            background-color: $light-color;
+            color: $primary-color;
+        }
+    }
+}
+
+/** BADGES **/
+
+.badge {
+    border: none;
+    padding: 0.2rem 2.4rem;
+    font-size: 1.6rem;
+    color: $light-color;
+    background-color: $primary-color;
+    margin: 5rem;
+    letter-spacing: 0.2rem;
+
+    &-tech {
+        background-color: $comment-color;
+    }
+
+    &-game {
+        background-color: $date-color;
+    }
+}
+
+/** RATING **/
+
+.rating {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 1rem;
+    left: 1rem;
+    background-color: $light-color;
+    opacity: 0;
+    z-index: 100;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-family: $primary-font;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 50%;
+    color: $primary-color;
+}
+
+/** REVIEWS **/
+
+.review {
+    padding: 5rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-left: 10rem;
+    border-left: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+    transform: skew(-28deg);
+
+    @include media(large) {
+        transform: skew(0deg);
+        border: none;
+        margin-left: 0;
+    }
+
+    & > * {
+        transform: skew(28deg);
+        @include media(large) {
+            transform: skew(0deg);
+        }
+    }
+
+    &-tags {
+        font-size: 1.5rem;
+        color: $light-color;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        margin: 1rem 0;
+    }
+
+    &-user {
+        display: flex;
+        align-items: center;
+
+        @include media(small) {
+            flex-direction: column;
+        }
+
+        img {
+            width: 8rem;
+            margin-right: 3rem;
+            border-radius: 50%;
+        }
+
+        &-detail {
+            font-family: $primary-font;
+            margin-right: 3rem;
+
+            .review-user-name {
+                color: $primary-color;
+            }
+            .review-user-date {
+                color: $date-color;
+            }
+        }
+
+        &-platform {
+            :not(:last-child) {
+                color: $primary-color;
+            }
+
+            .fab {
+                margin: 0 1rem;
+            }
+        }
+
+        &-rating {
+            margin-left: auto;
+
+            @include media(small) {
+                margin-left: 0;
+            }
+
+            .checked {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/** CRADS **/
+
+.card {
+    height: 40rem;
+    perspective: 1000px;
+
+    @include media(large) {
+        height: 35rem;
+    }
+
+    @include media(medium) {
+        height: 30rem;
+    }
+
+    @include media(small) {
+        height: 25rem;
+    }
+
+    &-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .card-front,
+    .card-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: all 1s;
+    }
+
+    .card-front {
+        background-color: $primary-color;
+    }
+
+    .card-back {
+        background-color: $secondary-color;
+        transform: rotateY(180deg);
+        display: table;
+
+        &-content {
+            display: table-cell;
+            vertical-align: middle;
+
+            p {
+                font-size: 1.8rem;
+            }
+
+            a {
+                transition: $general-transition;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    &:hover .card-front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover .card-back {
+        transform: none;
+    }
+}
